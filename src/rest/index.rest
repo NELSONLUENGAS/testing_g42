@@ -1,0 +1,31 @@
+#create
+GET http://localhost:3000/joyas?limits=2&page=1&order_by=stock_ASC
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyfQ.Et5jza1NDw4TuWyuZzvMfSNqWAsvtecAA2UEjNTTLNA
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "nelson2@gamil.com",
+  "password": "1234"
+}
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "name": "nelson",
+  "email": "nelson@gmail.com",
+  "password": "12Asdf@12",
+  "passwordRepeat": "12Asdf@12"
+}
+
+
+###
+
+DELETE https://api.example.com/medicamentos/2
